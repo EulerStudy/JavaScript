@@ -1,0 +1,16 @@
+> npm init -y
+
+> npm i -D parcel
+
+package.json에서
+"scripts": {
+  "dev": "parcel ./index.html",
+  "build": "parcel build ./index.html",
+},
+
+index.html에서
+<script type="module" defer src="./main.js"></script>
+type: main.js를 module로 인식 
+defer: html을 모두 해석한 뒤 js 동작
+
+> npm run dev
